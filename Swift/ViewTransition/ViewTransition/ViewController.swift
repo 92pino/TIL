@@ -32,22 +32,31 @@ class ViewController: UIViewController {
     return button
   }()
   
-  private let textField: UITextField = {
+  private let nameField: UITextField = {
     let tf = UITextField()
     tf.translatesAutoresizingMaskIntoConstraints = false
-    tf.placeholder = "텍스트를 입력하세요"
-    tf.addTarget(self, action: #selector(tfChangeValue), for: .editingChanged)
+    tf.placeholder = "이름을 입력해주세요"
     
     return tf
   }()
   
-  private let label: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    label.text = "값이 바뀝니다."
-    label.textColor = .black
+  private let ageField: UITextField = {
+    let tf = UITextField()
+    tf.translatesAutoresizingMaskIntoConstraints = false
+    tf.placeholder = "나이를 입력해주세요"
+    tf.keyboardType = .numberPad
     
-    return label
+    return tf
+  }()
+  
+  private let btnSingleTon: UIButton = {
+    let button = UIButton(type: .custom)
+    button.translatesAutoresizingMaskIntoConstraints = false
+    button.setTitle("Set Data to Singleton Instance", for: .normal)
+    button.setTitleColor(.black, for: .normal)
+    button.addTarget(self, action: #selector(touchUpSetButton), for: .touchUpInside)
+    
+    return button
   }()
   
   // MARK: - Lifecycle
@@ -77,7 +86,7 @@ class ViewController: UIViewController {
 
   // MARK: - Helper
   func configUI() {
-    [pushButton, modalButton, textField, label].forEach { view.addSubview($0) }
+    [pushButton, modalButton, nameField, ageField, btnSingleTon].forEach { view.addSubview($0) }
     
     let guide = view.safeAreaLayoutGuide
     
@@ -86,10 +95,12 @@ class ViewController: UIViewController {
       pushButton.centerYAnchor.constraint(equalTo: guide.centerYAnchor),
       modalButton.topAnchor.constraint(equalTo: pushButton.bottomAnchor, constant: 10),
       modalButton.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
-      textField.topAnchor.constraint(equalTo: modalButton.bottomAnchor, constant: 10),
-      textField.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
-      label.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 10),
-      label.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
+      nameField.topAnchor.constraint(equalTo: modalButton.bottomAnchor, constant: 20),
+      nameField.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
+      ageField.topAnchor.constraint(equalTo: nameField.bottomAnchor, constant: 20),
+      ageField.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
+      btnSingleTon.topAnchor.constraint(equalTo: ageField.bottomAnchor, constant: 20),
+      btnSingleTon.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
     ])
   }
 
@@ -106,8 +117,10 @@ class ViewController: UIViewController {
     present(modal, animated: true, completion: nil)
   }
   
-  @objc func tfChangeValue(_ sender: UITextField) {
-    label.text = sender.text
+  @objc func touchUpSetButton(_ sender: UIButton) {
+    print(1111)
+    UserInformation.shared.name = nameField.text
+    UserInformation.shared.age = ageField.text
   }
   
 }

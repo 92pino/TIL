@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61B6C40924378D870066B121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C40824378D870066B121 /* AppDelegate.swift */; };
-		61B6C40B24378D870066B121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C40A24378D870066B121 /* SceneDelegate.swift */; };
-		61B6C40D24378D870066B121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C40C24378D870066B121 /* ViewController.swift */; };
-		61B6C41024378D870066B121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B6C40E24378D870066B121 /* Main.storyboard */; };
-		61B6C41224378D890066B121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B6C41124378D890066B121 /* Assets.xcassets */; };
-		61B6C41524378D890066B121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B6C41324378D890066B121 /* LaunchScreen.storyboard */; };
-		61B6C41D24378DDE0066B121 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C41C24378DDE0066B121 /* SecondViewController.swift */; };
-		61B6C41F243794F30066B121 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C41E243794F30066B121 /* ModalViewController.swift */; };
-		61B6C4632438D8800066B121 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C4622438D8800066B121 /* UserInformation.swift */; };
+		61B6C4912438E7CD0066B121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C4902438E7CD0066B121 /* AppDelegate.swift */; };
+		61B6C4932438E7CD0066B121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C4922438E7CD0066B121 /* SceneDelegate.swift */; };
+		61B6C4952438E7CD0066B121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6C4942438E7CD0066B121 /* ViewController.swift */; };
+		61B6C4982438E7CD0066B121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B6C4962438E7CD0066B121 /* Main.storyboard */; };
+		61B6C49A2438E7D00066B121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B6C4992438E7D00066B121 /* Assets.xcassets */; };
+		61B6C49D2438E7D00066B121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B6C49B2438E7D00066B121 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61B6C40524378D870066B121 /* ViewTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		61B6C40824378D870066B121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61B6C40A24378D870066B121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61B6C40C24378D870066B121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		61B6C40F24378D870066B121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		61B6C41124378D890066B121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		61B6C41424378D890066B121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		61B6C41624378D890066B121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61B6C41C24378DDE0066B121 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		61B6C41E243794F30066B121 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		61B6C4622438D8800066B121 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		61B6C48D2438E7CD0066B121 /* TapGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B6C4902438E7CD0066B121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61B6C4922438E7CD0066B121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61B6C4942438E7CD0066B121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61B6C4972438E7CD0066B121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61B6C4992438E7D00066B121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61B6C49C2438E7D00066B121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61B6C49E2438E7D00066B121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		61B6C40224378D870066B121 /* Frameworks */ = {
+		61B6C48A2438E7CD0066B121 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61B6C3FC24378D870066B121 = {
+		61B6C4842438E7CD0066B121 = {
 			isa = PBXGroup;
 			children = (
-				61B6C40724378D870066B121 /* ViewTransition */,
-				61B6C40624378D870066B121 /* Products */,
+				61B6C48F2438E7CD0066B121 /* TapGesture */,
+				61B6C48E2438E7CD0066B121 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		61B6C40624378D870066B121 /* Products */ = {
+		61B6C48E2438E7CD0066B121 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61B6C40524378D870066B121 /* ViewTransition.app */,
+				61B6C48D2438E7CD0066B121 /* TapGesture.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61B6C40724378D870066B121 /* ViewTransition */ = {
+		61B6C48F2438E7CD0066B121 /* TapGesture */ = {
 			isa = PBXGroup;
 			children = (
-				61B6C40824378D870066B121 /* AppDelegate.swift */,
-				61B6C40A24378D870066B121 /* SceneDelegate.swift */,
-				61B6C41C24378DDE0066B121 /* SecondViewController.swift */,
-				61B6C40C24378D870066B121 /* ViewController.swift */,
-				61B6C4622438D8800066B121 /* UserInformation.swift */,
-				61B6C41E243794F30066B121 /* ModalViewController.swift */,
-				61B6C40E24378D870066B121 /* Main.storyboard */,
-				61B6C41124378D890066B121 /* Assets.xcassets */,
-				61B6C41324378D890066B121 /* LaunchScreen.storyboard */,
-				61B6C41624378D890066B121 /* Info.plist */,
+				61B6C4902438E7CD0066B121 /* AppDelegate.swift */,
+				61B6C4922438E7CD0066B121 /* SceneDelegate.swift */,
+				61B6C4942438E7CD0066B121 /* ViewController.swift */,
+				61B6C4962438E7CD0066B121 /* Main.storyboard */,
+				61B6C4992438E7D00066B121 /* Assets.xcassets */,
+				61B6C49B2438E7D00066B121 /* LaunchScreen.storyboard */,
+				61B6C49E2438E7D00066B121 /* Info.plist */,
 			);
-			path = ViewTransition;
+			path = TapGesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61B6C40424378D870066B121 /* ViewTransition */ = {
+		61B6C48C2438E7CD0066B121 /* TapGesture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61B6C41924378D890066B121 /* Build configuration list for PBXNativeTarget "ViewTransition" */;
+			buildConfigurationList = 61B6C4A12438E7D00066B121 /* Build configuration list for PBXNativeTarget "TapGesture" */;
 			buildPhases = (
-				61B6C40124378D870066B121 /* Sources */,
-				61B6C40224378D870066B121 /* Frameworks */,
-				61B6C40324378D870066B121 /* Resources */,
+				61B6C4892438E7CD0066B121 /* Sources */,
+				61B6C48A2438E7CD0066B121 /* Frameworks */,
+				61B6C48B2438E7CD0066B121 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ViewTransition;
-			productName = ViewTransition;
-			productReference = 61B6C40524378D870066B121 /* ViewTransition.app */;
+			name = TapGesture;
+			productName = TapGesture;
+			productReference = 61B6C48D2438E7CD0066B121 /* TapGesture.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		61B6C3FD24378D870066B121 /* Project object */ = {
+		61B6C4852438E7CD0066B121 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = pino;
 				TargetAttributes = {
-					61B6C40424378D870066B121 = {
+					61B6C48C2438E7CD0066B121 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 61B6C40024378D870066B121 /* Build configuration list for PBXProject "ViewTransition" */;
+			buildConfigurationList = 61B6C4882438E7CD0066B121 /* Build configuration list for PBXProject "TapGesture" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 61B6C3FC24378D870066B121;
-			productRefGroup = 61B6C40624378D870066B121 /* Products */;
+			mainGroup = 61B6C4842438E7CD0066B121;
+			productRefGroup = 61B6C48E2438E7CD0066B121 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61B6C40424378D870066B121 /* ViewTransition */,
+				61B6C48C2438E7CD0066B121 /* TapGesture */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		61B6C40324378D870066B121 /* Resources */ = {
+		61B6C48B2438E7CD0066B121 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B6C41524378D890066B121 /* LaunchScreen.storyboard in Resources */,
-				61B6C41224378D890066B121 /* Assets.xcassets in Resources */,
-				61B6C41024378D870066B121 /* Main.storyboard in Resources */,
+				61B6C49D2438E7D00066B121 /* LaunchScreen.storyboard in Resources */,
+				61B6C49A2438E7D00066B121 /* Assets.xcassets in Resources */,
+				61B6C4982438E7CD0066B121 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		61B6C40124378D870066B121 /* Sources */ = {
+		61B6C4892438E7CD0066B121 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B6C41D24378DDE0066B121 /* SecondViewController.swift in Sources */,
-				61B6C4632438D8800066B121 /* UserInformation.swift in Sources */,
-				61B6C41F243794F30066B121 /* ModalViewController.swift in Sources */,
-				61B6C40D24378D870066B121 /* ViewController.swift in Sources */,
-				61B6C40924378D870066B121 /* AppDelegate.swift in Sources */,
-				61B6C40B24378D870066B121 /* SceneDelegate.swift in Sources */,
+				61B6C4952438E7CD0066B121 /* ViewController.swift in Sources */,
+				61B6C4912438E7CD0066B121 /* AppDelegate.swift in Sources */,
+				61B6C4932438E7CD0066B121 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		61B6C40E24378D870066B121 /* Main.storyboard */ = {
+		61B6C4962438E7CD0066B121 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				61B6C40F24378D870066B121 /* Base */,
+				61B6C4972438E7CD0066B121 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		61B6C41324378D890066B121 /* LaunchScreen.storyboard */ = {
+		61B6C49B2438E7D00066B121 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				61B6C41424378D890066B121 /* Base */,
+				61B6C49C2438E7D00066B121 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		61B6C41724378D890066B121 /* Debug */ = {
+		61B6C49F2438E7D00066B121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		61B6C41824378D890066B121 /* Release */ = {
+		61B6C4A02438E7D00066B121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,36 +280,36 @@
 			};
 			name = Release;
 		};
-		61B6C41A24378D890066B121 /* Debug */ = {
+		61B6C4A22438E7D00066B121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F7W8C3A76;
-				INFOPLIST_FILE = ViewTransition/Info.plist;
+				INFOPLIST_FILE = TapGesture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.92pino.ViewTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.92pino.TapGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		61B6C41B24378D890066B121 /* Release */ = {
+		61B6C4A32438E7D00066B121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F7W8C3A76;
-				INFOPLIST_FILE = ViewTransition/Info.plist;
+				INFOPLIST_FILE = TapGesture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.92pino.ViewTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.92pino.TapGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61B6C40024378D870066B121 /* Build configuration list for PBXProject "ViewTransition" */ = {
+		61B6C4882438E7CD0066B121 /* Build configuration list for PBXProject "TapGesture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B6C41724378D890066B121 /* Debug */,
-				61B6C41824378D890066B121 /* Release */,
+				61B6C49F2438E7D00066B121 /* Debug */,
+				61B6C4A02438E7D00066B121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61B6C41924378D890066B121 /* Build configuration list for PBXNativeTarget "ViewTransition" */ = {
+		61B6C4A12438E7D00066B121 /* Build configuration list for PBXNativeTarget "TapGesture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B6C41A24378D890066B121 /* Debug */,
-				61B6C41B24378D890066B121 /* Release */,
+				61B6C4A22438E7D00066B121 /* Debug */,
+				61B6C4A32438E7D00066B121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 61B6C3FD24378D870066B121 /* Project object */;
+	rootObject = 61B6C4852438E7CD0066B121 /* Project object */;
 }
