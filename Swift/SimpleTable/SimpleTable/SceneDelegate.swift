@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  TapGesture
+//  SimpleTable
 //
 //  Created by JinBae Jeong on 2020/04/05.
 //  Copyright © 2020 pino. All rights reserved.
@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     window = UIWindow(windowScene: scene)
     
-    let root = ViewController()
+    let root = UINavigationController(rootViewController: ViewController())
     
     window?.rootViewController = root
     window?.makeKeyAndVisible()

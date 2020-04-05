@@ -9,12 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  private let tf: UITextField = {
+    let tf = UITextField()
+    tf.translatesAutoresizingMaskIntoConstraints = false
+    tf.placeholder = "tf"
+    
+    return tf
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    view.backgroundColor = .white
+    
+    configure()
+  }
+  
+  func configure() {
+    let tap = UITapGestureRecognizer(target: self, action: #selector(tapView))
+    view.addGestureRecognizer(tap)
+    
+    [tf].forEach{ view.addSubview($0) }
+    NSLayoutConstraint.activate([
+      tf.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      tf.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+    ])
   }
 
+  @objc func tapView(_ sender: UITapGestureRecognizer) {
+    view.endEditing(true)
+  }
 
 }
-
