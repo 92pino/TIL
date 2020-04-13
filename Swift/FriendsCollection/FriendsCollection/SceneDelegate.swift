@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  AsyncExample
+//  FriendsCollection
 //
-//  Created by JinBae Jeong on 2020/04/08.
+//  Created by JinBae Jeong on 2020/04/13.
 //  Copyright © 2020 pino. All rights reserved.
 //
 
@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     window = UIWindow(windowScene: scene)
     
-    let root = UINavigationController(rootViewController: ViewController())
+    let root = ViewController()
     
     window?.rootViewController = root
     window?.makeKeyAndVisible()

@@ -26,8 +26,6 @@ class ViewController: UIViewController {
     
     view.backgroundColor = .white
     configure()
-    
-    PHPhotoLibrary.shared().register(self)
   }
   
   func configure() {

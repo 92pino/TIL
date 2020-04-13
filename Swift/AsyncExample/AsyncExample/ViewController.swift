@@ -51,7 +51,6 @@ class ViewController: UIViewController {
     
     // https://upload.wikimedia.org/wikipedia/commons/3/3d/LARGE_elevation.jpg
     
-    print(1111)
     guard let imageURL: URL = URL(string: "https://upload.wikimedia.org/wikipedia/commons/3/3d/LARGE_elevation.jpg") else {
       return
     }
