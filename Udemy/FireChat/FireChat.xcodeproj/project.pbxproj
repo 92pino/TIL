@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,14 @@
 		8B455F59258F589900D4D96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B455F57258F589900D4D96A /* Main.storyboard */; };
 		8B455F5B258F589C00D4D96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B455F5A258F589C00D4D96A /* Assets.xcassets */; };
 		8B455F5E258F589C00D4D96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B455F5C258F589C00D4D96A /* LaunchScreen.storyboard */; };
-		8B455F67258F58C500D4D96A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F66258F58C500D4D96A /* Extensions.swift */; };
 		8B455F70258F59A300D4D96A /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F6F258F59A300D4D96A /* ConversationsController.swift */; };
 		8B455F74258F8C0200D4D96A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F73258F8C0200D4D96A /* LoginController.swift */; };
 		8B455F78258F8C0B00D4D96A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F77258F8C0B00D4D96A /* RegistrationController.swift */; };
+		8B455F7F258FA3F000D4D96A /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F7E258FA3F000D4D96A /* InputContainerView.swift */; };
+		8B455F82258FA6E600D4D96A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F81258FA6E600D4D96A /* CustomTextField.swift */; };
+		8B455F852590D70000D4D96A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F842590D70000D4D96A /* Extensions.swift */; };
+		8BE848792590DBA0003E7317 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE848782590DBA0003E7317 /* LoginViewModel.swift */; };
+		8BE8487C2590E341003E7317 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +35,14 @@
 		8B455F5A258F589C00D4D96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B455F5D258F589C00D4D96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B455F5F258F589C00D4D96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B455F66258F58C500D4D96A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8B455F6F258F59A300D4D96A /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		8B455F73258F8C0200D4D96A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8B455F77258F8C0B00D4D96A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		8B455F7E258FA3F000D4D96A /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
+		8B455F81258FA6E600D4D96A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8B455F842590D70000D4D96A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8BE848782590DBA0003E7317 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AD8A74341A9FBDABE46DEF92 /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +93,6 @@
 				8B455F6B258F595C00D4D96A /* Controller */,
 				8B455F6A258F595A00D4D96A /* API */,
 				8B455F69258F595300D4D96A /* Utils */,
-				8B455F66258F58C500D4D96A /* Extensions.swift */,
 				8B455F51258F589900D4D96A /* AppDelegate.swift */,
 				8B455F53258F589900D4D96A /* SceneDelegate.swift */,
 				8B455F55258F589900D4D96A /* ViewController.swift */,
@@ -100,6 +107,7 @@
 		8B455F69258F595300D4D96A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8B455F842590D70000D4D96A /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 		8B455F6C258F595E00D4D96A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8BE8487E2590E348003E7317 /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -130,6 +139,8 @@
 		8B455F6D258F596000D4D96A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B455F7E258FA3F000D4D96A /* InputContainerView.swift */,
+				8B455F81258FA6E600D4D96A /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,13 +161,21 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		8BE8487E2590E348003E7317 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8BE848782590DBA0003E7317 /* LoginViewModel.swift */,
+				8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		A25FC798AF84959686A2468E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7F7F6D606998C806E91F0E06 /* Pods-FireChat.debug.xcconfig */,
 				AD8A74341A9FBDABE46DEF92 /* Pods-FireChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,12 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B455F78258F8C0B00D4D96A /* RegistrationController.swift in Sources */,
+				8BE8487C2590E341003E7317 /* RegistrationViewModel.swift in Sources */,
+				8B455F7F258FA3F000D4D96A /* InputContainerView.swift in Sources */,
 				8B455F56258F589900D4D96A /* ViewController.swift in Sources */,
 				8B455F74258F8C0200D4D96A /* LoginController.swift in Sources */,
 				8B455F52258F589900D4D96A /* AppDelegate.swift in Sources */,
+				8B455F852590D70000D4D96A /* Extensions.swift in Sources */,
 				8B455F70258F59A300D4D96A /* ConversationsController.swift in Sources */,
 				8B455F54258F589900D4D96A /* SceneDelegate.swift in Sources */,
-				8B455F67258F58C500D4D96A /* Extensions.swift in Sources */,
+				8BE848792590DBA0003E7317 /* LoginViewModel.swift in Sources */,
+				8B455F82258FA6E600D4D96A /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
