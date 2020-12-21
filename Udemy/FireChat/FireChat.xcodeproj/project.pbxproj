@@ -22,6 +22,7 @@
 		8B455F852590D70000D4D96A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B455F842590D70000D4D96A /* Extensions.swift */; };
 		8BE848792590DBA0003E7317 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE848782590DBA0003E7317 /* LoginViewModel.swift */; };
 		8BE8487C2590E341003E7317 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */; };
+		8BE848822590EA95003E7317 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BE848812590EA95003E7317 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		8B455F842590D70000D4D96A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8BE848782590DBA0003E7317 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		8BE848812590EA95003E7317 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD8A74341A9FBDABE46DEF92 /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				8B455F5A258F589C00D4D96A /* Assets.xcassets */,
 				8B455F5C258F589C00D4D96A /* LaunchScreen.storyboard */,
 				8B455F5F258F589C00D4D96A /* Info.plist */,
+				8BE848812590EA95003E7317 /* GoogleService-Info.plist */,
 			);
 			path = FireChat;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B455F5E258F589C00D4D96A /* LaunchScreen.storyboard in Resources */,
+				8BE848822590EA95003E7317 /* GoogleService-Info.plist in Resources */,
 				8B455F5B258F589C00D4D96A /* Assets.xcassets in Resources */,
 				8B455F59258F589900D4D96A /* Main.storyboard in Resources */,
 			);
@@ -458,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.92pino.FireChat;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.92pino.Firebase-ChatApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.92pino.FireChat;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.92pino.Firebase-ChatApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
