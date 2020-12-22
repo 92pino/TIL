@@ -23,6 +23,7 @@
 		8BE848792590DBA0003E7317 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE848782590DBA0003E7317 /* LoginViewModel.swift */; };
 		8BE8487C2590E341003E7317 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */; };
 		8BE848822590EA95003E7317 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BE848812590EA95003E7317 /* GoogleService-Info.plist */; };
+		8BE848BB25922B1A003E7317 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE848BA25922B19003E7317 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		8BE848782590DBA0003E7317 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8BE8487B2590E341003E7317 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		8BE848812590EA95003E7317 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BE848BA25922B19003E7317 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AD8A74341A9FBDABE46DEF92 /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		8B455F6A258F595A00D4D96A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				8BE848BA25922B19003E7317 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				8B455F78258F8C0B00D4D96A /* RegistrationController.swift in Sources */,
 				8BE8487C2590E341003E7317 /* RegistrationViewModel.swift in Sources */,
 				8B455F7F258FA3F000D4D96A /* InputContainerView.swift in Sources */,
+				8BE848BB25922B1A003E7317 /* AuthService.swift in Sources */,
 				8B455F56258F589900D4D96A /* ViewController.swift in Sources */,
 				8B455F74258F8C0200D4D96A /* LoginController.swift in Sources */,
 				8B455F52258F589900D4D96A /* AppDelegate.swift in Sources */,
