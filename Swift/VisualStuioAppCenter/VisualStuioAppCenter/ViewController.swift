@@ -26,3 +26,4 @@ class ViewController: UIViewController {
 
 }
 
+xcrun xcodebuild build-for-testing -configuration Debug -workspace VisualStuioAppCenter.xcworkspace -sdk iphoneos -scheme VisualStuioAppCenter -derivedDataPath ddp
