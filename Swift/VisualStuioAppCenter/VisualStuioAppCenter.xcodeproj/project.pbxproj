@@ -48,7 +48,6 @@
 				8814133816669FAD86F2EC69 /* Pods-VisualStuioAppCenter.debug.xcconfig */,
 				E2A152C4149C59952F2EBAF3 /* Pods-VisualStuioAppCenter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -339,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 99626YDKH4;
+				DEVELOPMENT_TEAM = VB5KPC8TUV;
 				INFOPLIST_FILE = VisualStuioAppCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 99626YDKH4;
+				DEVELOPMENT_TEAM = VB5KPC8TUV;
 				INFOPLIST_FILE = VisualStuioAppCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
