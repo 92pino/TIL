@@ -124,9 +124,24 @@ class RegistrationController: UIViewController {
         passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         fullnameTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         usernameTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     // MARK: - Selectors
+
+    @objc func keyboardWillShow() {
+        if view.frame.origin.y == 0 {
+            self.view.frame.origin.y -= 88
+        }
+    }
+
+    @objc func keyboardWillHide() {
+        if view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     
     @objc func handleRegistration() {
         guard let email = emailTextField.text else { return }
@@ -134,14 +149,18 @@ class RegistrationController: UIViewController {
         guard let fullname = fullnameTextField.text else { return }
         guard let username = usernameTextField.text?.lowercased() else { return }
         guard let profileImage = profileImage else { return }
-        
+
         let credentials = RegistrationCredentials(email: email, password: password, fullname: fullname, username: username, profileImage: profileImage)
-        
+
+        showLoader(true, withText: "Signing You Up")
+
         AuthService.shared.createUser(credentials: credentials) { (error) in
             if let error = error {
                 print("DEBUG: \(error.localizedDescription)")
+                self.showLoader(false)
                 return
             }
+            self.showLoader(false)
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -182,9 +201,9 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
         profileImage = image
         plusPhotoButton.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
         plusPhotoButton.layer.borderColor = UIColor.white.cgColor
-        plusPhotoButton.layer.borderWidth = 3
+        plusPhotoButton.layer.borderWidth = 3.0
         plusPhotoButton.layer.cornerRadius = 200 / 2
-        
+
         dismiss(animated: true, completion: nil)
     }
 }

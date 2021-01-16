@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import Firebase
+import JGProgressHUD
 
 protocol AuthenticationControllerProtocol {
     func checkFormStatus()
@@ -38,7 +39,7 @@ class LoginController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Log In", for: .normal)
         button.layer.cornerRadius = 5
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         button.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
         button.setTitleColor(.white, for: .normal)
@@ -80,13 +81,18 @@ class LoginController: UIViewController {
     @objc func handleLogin() {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
-        
+
+        showLoader(true, withText: "Logging in")
         AuthService.shared.logUserIn(withEmail: email, password: password) { (result, error) in
             if let error = error {
                 print("DEBUG: Failed to login with error \(error.localizedDescription)")
+                // 에러가 발생할 경우 hud를 내리기
+                self.showLoader(false)
                 return
             }
-            
+
+            // 성공을 해도 hud를 내리기
+            self.showLoader(false)
             self.dismiss(animated: true, completion: nil)
         }
     }
