@@ -15,6 +15,14 @@ class ConversationsController: UIViewController {
     // MARK: - Properties
     
     private let tableView = UITableView()
+
+    private let newMessageButton = UIButton().then {
+        $0.setImage(UIImage(systemName: "plus"), for: .normal)
+        $0.backgroundColor = .systemPurple
+        $0.tintColor = .white
+        $0.layer.cornerRadius = 56 / 2
+        $0.addTarget(self, action: #selector(showNewMessage), for: .touchUpInside)
+    }
     
     // MARK: - Lifecycle
 
@@ -28,6 +36,14 @@ class ConversationsController: UIViewController {
     // MARK: - Selectors
     @objc func showProfile() {
         logout()
+    }
+
+    @objc func showNewMessage() {
+        let controller = NewMessageController()
+        controller.delegate = self
+        let nav = UINavigationController(rootViewController: controller)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
     
     // MARK: - API
@@ -63,11 +79,18 @@ class ConversationsController: UIViewController {
     func configureUI() {
         view.backgroundColor = .white
         
-        configureNavigationBar()
+        configureNavigationBar(withTitle: "Messages", prefersLargeTitles: true)
         configureTableView()
         
         let image = UIImage(systemName: "person.circle.fill")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(showProfile))
+
+        view.addSubview(newMessageButton)
+        newMessageButton.snp.makeConstraints {
+            $0.size.equalTo(56)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-16)
+            $0.right.equalTo(view.snp.right).offset(-24)
+        }
     }
     
     func configureTableView() {
@@ -82,23 +105,6 @@ class ConversationsController: UIViewController {
         tableView.frame = view.frame
     }
     
-    func configureNavigationBar() {
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.backgroundColor = .systemPurple
-        
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Messages"
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.isTranslucent = true
-        
-        navigationController?.navigationBar.overrideUserInterfaceStyle = .dark
-    }
 }
 
 extension ConversationsController: UITableViewDataSource {
@@ -117,5 +123,15 @@ extension ConversationsController: UITableViewDataSource {
 extension ConversationsController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+    }
+}
+
+// MARK: - NewMessageControllerDelegate
+
+extension ConversationsController: NewMessageControllerDelegate {
+    func controller(_ controller: NewMessageController, wantsToStartChatWith user: User) {
+        controller.dismiss(animated: true, completion: nil)
+        let chat = ChatController(user: user)
+        navigationController?.pushViewController(chat, animated: true)
     }
 }
