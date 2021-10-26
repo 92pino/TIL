@@ -3,7 +3,7 @@
 ---
 - 목차
     - [print 사용법](#print)
-
+    - [변수](#variable)
 ---
 
 <h2 id="print">print 사용법</h2>
@@ -67,3 +67,39 @@ print('%0.2f' % (3.12312))      # %N.Mf << 총 N자리까지 출력, 소수점 M
 print('%05.2f' % (1.12345678))      # 총 5자리, 소수점 2자리 << 01.12
 print('{:06.2f}'.format(3.141592))
 ```
+
+<h2 id="variable">변수</h2>
+기본 선언
+n = 3
+
+### 다양한 변수 선언
+1. Camel Case
+  > 띄어쓰기 대신 이어지는 첫 글자를 대문자로 작성  
+  > 함수, 변수 선언할 때 주로 사용
+```python
+camelCase
+numberOfCollegeGraduates
+studentGrade
+```
+
+2. Pascal Case
+  > Camel Case와 유사하지만 맨 첫번째 글자도 대문자로 작성  
+  > class를 선언할 때 주로 사용
+```python
+PascalCase
+NumberOfCollegeGraduates
+StudentGrade
+```
+
+3. Snake Case
+  > 띄어쓰기 대신 뱀처럼 _를 이어서 영어 단어를 작성  
+  > python에서 주로 사용
+```python
+snake_case
+number_of_college_graduates
+student_grade = 3
+```
+
+### 허용하는 변수 선언
+- 특수문자(_, $ 제외), 숫자로 시작하는 변수는 사용 불가
+- 예약어는 변수명으로 사용 불가
